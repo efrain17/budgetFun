@@ -156,3 +156,30 @@ body {
   max-height: 110px;
 }
 
+.panel-primary {
+    border-color: #32ac2e;
+}
+
+.panel-primary>.panel-heading {
+    color: #ffffff;
+    background-color: #289c51;
+    border-color: #1ea23e;
+}
+
+.label-primary {
+    background-color: #289c51;
+}
+
+.navbar-inverse {
+    background-color: #d9230f;
+    border-color: #a91b0c;
+}
+
+.navbar-inverse {
+    background-color: #289c51;
+    border-color: #289c51;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #dedede;
+}
