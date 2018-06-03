@@ -1,0 +1,19 @@
+{
+  "name": "experiencias",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Angular.js",
+  "scripts": {
+    "start": "grunt"
+  },
+  "author": "Efrain coello <carlosefrain17@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-connect": "^0.8.0",
+    "grunt-contrib-watch": "^0.6.1"
+  },
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}

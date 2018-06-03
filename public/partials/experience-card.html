@@ -1,0 +1,33 @@
+<div class="pokemon panel panel-primary">
+  <div class="panel-heading">
+    <experience-name></experience-name>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-xs-4">
+        <a href="/#experience/{{experience.name | normalize}}">
+          <experience-image></experience-image>
+        </a>
+      </div>
+      <div class="col-xs-8">
+        <h4 class="primary-text">Titulo de experiencia</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+      </div>
+    </div>
+  </div>
+  <div style="margin-left: 2rem" ng-controller="RatingCtrl" name="pokemonRating">
+    <span uib-rating ng-model="rate" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null"  aria-labelledby="default-rating"></span>
+    <span class="label" ng-class="{'label-warning': percent<30, 'label-info': percent>=30 && percent<70, 'label-success': percent>=70}" ng-show="overStar && !isReadonly">{{percent}}%</span>
+  </div>
+  <div class="panel-footer">
+    <div class="text-center">
+      <experience-type></experience-type>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+

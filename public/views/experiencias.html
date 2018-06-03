@@ -1,0 +1,17 @@
+<div>
+  <div class="page-header">
+    <h1><small>Comienza tu experiencia</small></h1>
+    <input class="form-control" ng-model="textSearch" ng-change="searchExperience()" placeholder="Search">
+    <h2 ng-if="type"><span class="label type-{{type | lowercase}}">{{type}}</span></h2>
+  </div>
+  <div class="row" ng-repeat="group in groupped">
+    <div class="col-lg-3" ng-repeat="experience in group ">
+      <experience-card></experience-card>
+    </div>
+  </div>
+  <div >
+  	<ul uib-pagination items-per-page="itemsPerPage" total-items="totalItems" ng-model="currentPage" max-size="maxSize" class="pagination-sm" boundary-links="true" force-ellipses="true" ng-change="pageChanged()" num-pages="numPages"> 		
+  	</ul>
+  	 <pre>Page: {{currentPage}} / {{numPages}}</pre>
+  </div>
+</div>
