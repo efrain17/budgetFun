@@ -17,6 +17,15 @@
         return deferred.promise;
       }
 
+      function getIntereses() {
+        var deferred = $q.defer();
+
+        $http.get('/intereses_data')
+        .success(function (data) {
+          deferred.resolve(data);
+        });
+        return deferred.promise;
+      }
 
       function byName(name) {
         name = normalize(name);
@@ -58,7 +67,8 @@
       return {
         all: all,
         byName: byName,
-        byType: byType
+        byType: byType,
+        getIntereses: getIntereses
       };
 
     }]);

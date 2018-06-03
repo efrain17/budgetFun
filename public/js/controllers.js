@@ -1,6 +1,36 @@
 (function (_) {
 
   angular.module('experience.controllers', [])
+    .controller('MapController', function(NgMap) {
+      NgMap.getMap().then(function(map) {
+        console.log(map.getCenter());
+        console.log('markers', map.markers);
+        console.log('shapes', map.shapes);
+      });
+    })
+    .controller('PreferentsController', ['$scope', 'experienceService', function ($scope, experienceService) {
+
+      experienceService.getIntereses().then(function (data) {
+        console.log(data);
+        $scope.intereses = data;
+      });
+
+    }])
+    .controller('TabsController',['$scope',function ($scope) {
+       $scope.tab = 1;
+
+      $scope.selectTab =function (tab) {
+        $scope.tab = tab;
+      };
+
+      $scope.isActive =function(tab){
+        return $scope.tab===tab; 
+      };
+
+    }])
+
+
+
     .controller('ExperiencesController', ['$rootScope','$scope', '$routeParams', 'experienceService', function ($rootScope,$scope, $routeParams, experienceService) {
       var type = $routeParams.type;
       $rootScope.title="Experience";

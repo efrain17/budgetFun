@@ -183,3 +183,20 @@ body {
 .navbar-inverse .navbar-brand {
     color: #dedede;
 }
+
+.pagination>.active>a, 
+.pagination>.active>span, 
+.pagination>.active>a:hover, 
+.pagination>.active>span:hover, 
+.pagination>.active>a:focus, 
+.pagination>.active>span:focus {
+    z-index: 2;
+    color: #ffffff;
+    background-color: #289c51;
+    border-color: #289c51;
+    cursor: default;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: #7bbf93;
+}

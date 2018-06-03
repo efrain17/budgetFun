@@ -6,7 +6,8 @@
     'experience.controllers',
     'experience.directives',
     'experience.filters',
-    'experience.services'
+    'experience.services',
+    'ngMap'
   ]);
 
   app.config(['$routeProvider', function ($routeProvider) {
@@ -15,6 +16,14 @@
       .when('/', {
         templateUrl: 'views/experiencias.html',
         controller: 'ExperiencesController'
+      })
+      .when('/map', {
+        templateUrl: 'views/map.html',
+        controller: 'MapController'
+      })
+      .when('/preferents', {
+        templateUrl: 'views/preferents.html',
+        controller: 'PreferentsController'
       })
       .when('/:type', {
         templateUrl: 'views/experiencias.html',
