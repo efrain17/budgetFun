@@ -1,98 +1,98 @@
 [
   {
-    "id": "$ 40",
+    "id": "40",
     "name": "Comida",
     "species": "Comida",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
     "title":"Carnes",
     "type": [
-      "Grass"
+      "Entretenimiento"
     ]
   },
 
   {
-    "id": "$ 30",
+    "id": "30",
     "name": "Deporte",
     "species": "futball",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
     "title":"socker",
     "type": [
-      "Grass"
+      "Entretenimiento", "Deporte"
     ]
   }, 
 
   {
-    "id": "$ 30",
+    "id": "30",
     "name": "Bares",
     "species": "Cerveza",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
     "title":"Artesanal",
     "type": [
-      "Grass"
+      "Entretenimiento"
     ]
   },
   {
-    "id": "$ 20",
+    "id": "20",
     "name": "Peliculas",
     "species": "Cines",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
     "title":"Cines",
     "type": [
-      "Grass"
+      "Entretenimiento", "Cultura"
     ]
   },
 
 {
-    "id": "$ 50",
+    "id": "50",
     "name": "Discotecas",
     "species": "Salsa",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
     "title":"cover",
     "type": [
-      "Grass"
+      "Entretenimiento", "Ocio"
     ]
   },
 
   {
-    "id": "$ 60",
+    "id": "60",
     "name": "Eventos",
     "species": "teatro",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
     "title":"operas",
     "type": [
-      "Grass"
+      "Entretenimiento", "Cultura"
     ]
   },
 
 {
-    "id": "$ 10",
+    "id": "10",
     "name": "Eventos",
     "species": "teatro",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
     "title":"danza",
     "type": [
-      "Grass"
+      "Entretenimiento", "Cultura", "Ocio"
     ]
   },
 
 {
-    "id": "$ 40",
+    "id": "40",
     "name": "Eventos",
     "species": "Conciertos",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
     "title":"Musica",
     "type": [
-      "Grass"
+      "Entretenimiento", "Ocio"
     ]
   },
 {
-    "id": "$ 90",
+    "id": "90",
     "name": "Mercado",
     "species": "Vegetales",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
     "title":"Vegetales",
     "type": [
-      "Grass"
+      "Entretenimiento", "Vegano"
     ]
   }      
 
